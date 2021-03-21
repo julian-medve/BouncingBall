@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CityEngine">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../CityEngine.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
