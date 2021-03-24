@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096aca2c-b707-45fd-80a1-1f170813dbd6" name="Default Changelist" comment="" />
+    <list default="true" id="096aca2c-b707-45fd-80a1-1f170813dbd6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameSave" beforeDir="false" afterPath="$PROJECT_DIR$/GameSave" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/highscore" beforeDir="false" afterPath="$PROJECT_DIR$/highscore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ptJX9cAb8H2hfTEN2oByljxCdc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,7 +29,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="bouncingball" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
@@ -72,6 +85,13 @@
       <workItem from="1616004906166" duration="37111000" />
       <workItem from="1616076450881" duration="36684000" />
       <workItem from="1616160074569" duration="39188000" />
+      <workItem from="1616394134338" duration="189000" />
+      <workItem from="1616397383461" duration="1690000" />
+      <workItem from="1616415800944" duration="1817000" />
+      <workItem from="1616442207618" duration="233000" />
+      <workItem from="1616442461803" duration="101000" />
+      <workItem from="1616510480876" duration="647000" />
+      <workItem from="1616511528581" duration="120000" />
     </task>
     <servers />
   </component>
@@ -87,6 +107,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="134" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1616002172316" />
+    <state x="439" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616416242576">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="439" y="175" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1360.728@0.0.1360.728" timestamp="1616416242576" />
     <state x="485" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1616174135100">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -107,25 +131,25 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="386" y="109" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1616066836583" />
-    <state width="1317" height="172" key="GridCell.Tab.0.bottom" timestamp="1616327320164">
+    <state width="1317" height="158" key="GridCell.Tab.0.bottom" timestamp="1616511137104">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="172" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1616327320164" />
+    <state width="1317" height="158" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1616511137104" />
     <state width="1317" height="66" key="GridCell.Tab.0.bottom/0.0.1360.768@0.0.1360.768" timestamp="1616014339275" />
-    <state width="1317" height="172" key="GridCell.Tab.0.center" timestamp="1616327320163">
+    <state width="1317" height="158" key="GridCell.Tab.0.center" timestamp="1616511137104">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="172" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1616327320163" />
+    <state width="1317" height="158" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1616511137104" />
     <state width="1317" height="66" key="GridCell.Tab.0.center/0.0.1360.768@0.0.1360.768" timestamp="1616014339275" />
-    <state width="1317" height="172" key="GridCell.Tab.0.left" timestamp="1616327320163">
+    <state width="1317" height="158" key="GridCell.Tab.0.left" timestamp="1616511137104">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="172" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1616327320163" />
+    <state width="1317" height="158" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1616511137104" />
     <state width="1317" height="66" key="GridCell.Tab.0.left/0.0.1360.768@0.0.1360.768" timestamp="1616014339275" />
-    <state width="1317" height="172" key="GridCell.Tab.0.right" timestamp="1616327320164">
+    <state width="1317" height="158" key="GridCell.Tab.0.right" timestamp="1616511137104">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="172" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1616327320164" />
+    <state width="1317" height="158" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1616511137104" />
     <state width="1317" height="66" key="GridCell.Tab.0.right/0.0.1360.768@0.0.1360.768" timestamp="1616014339275" />
     <state width="1317" height="172" key="GridCell.Tab.1.bottom" timestamp="1616327320165">
       <screen x="0" y="0" width="1360" height="728" />

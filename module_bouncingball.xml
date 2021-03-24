@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_bouncingball" default="compile.module.bouncingball">
+  <dirname property="module.bouncingball.basedir" file="${ant.file.module_bouncingball}"/>
+  
+  <property name="module.jdk.home.bouncingball" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.bouncingball" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.bouncingball" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.bouncingball" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="bouncingball.output.dir" value="${module.bouncingball.basedir}/out/production/BouncingBall"/>
+  <property name="bouncingball.testoutput.dir" value="${module.bouncingball.basedir}/out/test/BouncingBall"/>
+  
+  <path id="bouncingball.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="bouncingball.module.production.classpath">
+    <path refid="${module.jdk.classpath.bouncingball}"/>
+    <path refid="library.cityengine.classpath"/>
+  </path>
+  
+  <path id="bouncingball.runtime.production.module.classpath">
+    <pathelement location="${bouncingball.output.dir}"/>
+    <path refid="library.cityengine.classpath"/>
+  </path>
+  
+  <path id="bouncingball.module.classpath">
+    <path refid="${module.jdk.classpath.bouncingball}"/>
+    <pathelement location="${bouncingball.output.dir}"/>
+    <path refid="library.cityengine.classpath"/>
+  </path>
+  
+  <path id="bouncingball.runtime.module.classpath">
+    <pathelement location="${bouncingball.testoutput.dir}"/>
+    <pathelement location="${bouncingball.output.dir}"/>
+    <path refid="library.cityengine.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.bouncingball">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.bouncingball">
+    <patternset refid="excluded.from.module.bouncingball"/>
+  </patternset>
+  
+  <path id="bouncingball.module.sourcepath">
+    <dirset dir="${module.bouncingball.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.bouncingball" depends="compile.module.bouncingball.production,compile.module.bouncingball.tests" description="Compile module BouncingBall"/>
+  
+  <target name="compile.module.bouncingball.production" depends="register.custom.compilers" description="Compile module BouncingBall; production classes">
+    <mkdir dir="${bouncingball.output.dir}"/>
+    <javac2 destdir="${bouncingball.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.bouncingball}/javac">
+      <compilerarg line="${compiler.args.bouncingball}"/>
+      <bootclasspath refid="bouncingball.module.bootclasspath"/>
+      <classpath refid="bouncingball.module.production.classpath"/>
+      <src refid="bouncingball.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.bouncingball"/>
+    </javac2>
+    
+    <copy todir="${bouncingball.output.dir}">
+      <fileset dir="${module.bouncingball.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.bouncingball.tests" depends="register.custom.compilers,compile.module.bouncingball.production" description="compile module BouncingBall; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.bouncingball" description="cleanup module">
+    <delete dir="${bouncingball.output.dir}"/>
+    <delete dir="${bouncingball.testoutput.dir}"/>
+  </target>
+</project>
